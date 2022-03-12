@@ -1,26 +1,46 @@
 package com.example.springservice.controller;
 
-import org.springframework.ui.Model;
+import com.example.springservice.exception.Exception;
+import com.example.springservice.polindrom.Polindrom;
+import com.example.springservice.response.Response;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RestController;
 
+import java.net.BindException;
 
-@Controller
+@RestController
 public class Controll {
+    @GetMapping("/")
+    void error() throws Exception{
+        throw new Exception("Internal Server Error", HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+
     @GetMapping("/check")
-    String len(@RequestParam(value = "str", defaultValue = "default") String word, Model model){
+    Polindrom len(@RequestParam(value = "str", defaultValue = "") String word) throws Exception {
+        if(word.equals("")) throw new Exception("BAD REQUEST", HttpStatus.BAD_REQUEST);
+
         boolean check = true;
-        String str = "Да";
+        String str = "Yes";
         for(int i = 0; i < word.length()/2; i++){
             if(word.charAt(i) != word.charAt(word.length()-i-1)){
                 check = false;
                 break;
             }
         }
-        if(!check) str = "Нет";
-        model.addAttribute("len", word.length());
-        model.addAttribute("isPolinom", str);
-        return "check";
+        if(!check) str = "No";
+        return new Polindrom(word.length(), str);
+    }
+
+    @ExceptionHandler(Exception.class)
+    public ResponseEntity<Response> handleException(Exception e){
+        Response response = new Response(e.getException());
+
+        return new ResponseEntity<>(response, e.getStatus());
     }
 }
+
