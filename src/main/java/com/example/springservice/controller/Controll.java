@@ -12,8 +12,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.net.BindException;
-
 @RestController
 public class Controll {
     private static final Logger LOGGER = LoggerFactory.getLogger(Controll.class);
@@ -21,8 +19,8 @@ public class Controll {
     @GetMapping("/")
     void error() throws Exception{
         LOGGER.info("Endpoint: /");
-        LOGGER.info("Internal Server Error");
-        throw new Exception("Internal Server Error", HttpStatus.INTERNAL_SERVER_ERROR);
+        LOGGER.info("Can't process Endpoint: /");
+        throw new Exception("Can't process Endpoint: /", HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
     @GetMapping("/check")
@@ -30,8 +28,8 @@ public class Controll {
         LOGGER.info("Endpoint: /cheak");
         LOGGER.info("Request: " + word);
         if(word.equals("")){
-            LOGGER.info("BAD REQUEST");
-            throw new Exception("BAD REQUEST", HttpStatus.BAD_REQUEST);
+            LOGGER.info("Empty input parametr");
+            throw new Exception("mpty input parametr", HttpStatus.BAD_REQUEST);
         }
 
         boolean check = true;

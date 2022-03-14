@@ -1,78 +1,52 @@
-2022-03-12 19:55:36.320  INFO 29878 --- [restartedMain] c.e.s.SpringServiceApplication           : Starting SpringServiceApplication using Java 17.0.2 on MacBook-Air-Vana.local with PID 29878 (/Users/ripper/Desktop/bsuir/kpp/springService/build/classes/java/main started by ripper in /Users/ripper/Desktop/bsuir/kpp/springService)
-2022-03-12 19:55:36.321  INFO 29878 --- [restartedMain] c.e.s.SpringServiceApplication           : No active profile set, falling back to 1 default profile: "default"
-2022-03-12 19:55:36.336  INFO 29878 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-03-12 19:55:36.337  INFO 29878 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-03-12 19:55:36.576  INFO 29878 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$6def9a05] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-03-12 19:55:36.603  INFO 29878 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2022-03-12 19:55:36.733  INFO 29878 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-03-12 19:55:36.737  INFO 29878 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-03-12 19:55:36.737  INFO 29878 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-03-12 19:55:36.758  INFO 29878 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-03-12 19:55:36.759  INFO 29878 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 422 ms
-2022-03-12 19:55:36.894  INFO 29878 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-03-12 19:55:36.908  INFO 29878 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-03-12 19:55:36.912  INFO 29878 --- [restartedMain] c.e.s.SpringServiceApplication           : Started SpringServiceApplication in 0.718 seconds (JVM running for 1.238)
-2022-03-12 19:57:10.427  INFO 29978 --- [Test worker] c.example.springservice.TestController   : Starting TestController using Java 17.0.2 on MacBook-Air-Vana.local with PID 29978 (started by ripper in /Users/ripper/Desktop/bsuir/kpp/springService)
-2022-03-12 19:57:10.427  INFO 29978 --- [Test worker] c.example.springservice.TestController   : No active profile set, falling back to 1 default profile: "default"
-2022-03-12 19:57:10.693  INFO 29978 --- [Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$463f539b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-03-12 19:57:10.726  INFO 29978 --- [Test worker] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2022-03-12 19:57:11.030  INFO 29978 --- [Test worker] c.example.springservice.TestController   : Started TestController in 0.712 seconds (JVM running for 1.184)
-2022-03-12 19:57:11.200  INFO 29978 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2022-03-12 19:57:11.200  INFO 29978 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2022-03-12 19:57:11.201  INFO 29978 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-2022-03-12 19:57:11.216  INFO 29978 --- [Test worker] c.e.springservice.controller.Controll    : Endpoint: /cheak
-2022-03-12 19:57:11.216  INFO 29978 --- [Test worker] c.e.springservice.controller.Controll    : Request: 123
-2022-03-12 19:57:11.216  INFO 29978 --- [Test worker] c.e.springservice.controller.Controll    : Response: len: 3 isPolinom: No
-2022-03-12 19:58:19.027  INFO 30046 --- [Test worker] c.example.springservice.TestController   : Starting TestController using Java 17.0.2 on MacBook-Air-Vana.local with PID 30046 (started by ripper in /Users/ripper/Desktop/bsuir/kpp/springService)
-2022-03-12 19:58:19.029  INFO 30046 --- [Test worker] c.example.springservice.TestController   : No active profile set, falling back to 1 default profile: "default"
-2022-03-12 19:58:19.488  INFO 30046 --- [Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$cbee313b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-03-12 19:58:19.520  INFO 30046 --- [Test worker] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2022-03-12 19:58:19.847  INFO 30046 --- [Test worker] c.example.springservice.TestController   : Started TestController in 1.195 seconds (JVM running for 1.749)
-2022-03-12 19:58:20.003  INFO 30046 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2022-03-12 19:58:20.004  INFO 30046 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2022-03-12 19:58:20.005  INFO 30046 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-2022-03-12 19:58:20.022  INFO 30046 --- [Test worker] c.e.springservice.controller.Controll    : Endpoint: /cheak
-2022-03-12 19:58:20.023  INFO 30046 --- [Test worker] c.e.springservice.controller.Controll    : Request: 123
-2022-03-12 19:58:20.023  INFO 30046 --- [Test worker] c.e.springservice.controller.Controll    : Response: len: 3 isPolinom: No
-2022-03-12 20:05:13.383  INFO 30306 --- [Test worker] c.example.springservice.TestController   : Starting TestController using Java 17.0.2 on MacBook-Air-Vana.local with PID 30306 (started by ripper in /Users/ripper/Desktop/bsuir/kpp/springService)
-2022-03-12 20:05:13.384  INFO 30306 --- [Test worker] c.example.springservice.TestController   : No active profile set, falling back to 1 default profile: "default"
-2022-03-12 20:05:13.695  INFO 30306 --- [Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$fa14c8d2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-03-12 20:05:13.727  INFO 30306 --- [Test worker] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2022-03-12 20:05:14.039  INFO 30306 --- [Test worker] c.example.springservice.TestController   : Started TestController in 0.982 seconds (JVM running for 1.819)
-2022-03-12 20:05:14.234  INFO 30306 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2022-03-12 20:05:14.234  INFO 30306 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2022-03-12 20:05:14.234  INFO 30306 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
-2022-03-12 20:05:14.253  INFO 30306 --- [Test worker] c.e.springservice.controller.Controll    : Endpoint: /
-2022-03-12 20:05:14.253  INFO 30306 --- [Test worker] c.e.springservice.controller.Controll    : Internal Server Error
-2022-03-12 20:05:14.256  INFO 30306 --- [Test worker] c.e.springservice.controller.Controll    : Exception: Internal Server Error
-2022-03-12 20:05:58.120  INFO 30351 --- [Test worker] c.example.springservice.TestController   : Starting TestController using Java 17.0.2 on MacBook-Air-Vana.local with PID 30351 (started by ripper in /Users/ripper/Desktop/bsuir/kpp/springService)
-2022-03-12 20:05:58.121  INFO 30351 --- [Test worker] c.example.springservice.TestController   : No active profile set, falling back to 1 default profile: "default"
-2022-03-12 20:05:58.384  INFO 30351 --- [Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$2e3228c1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-03-12 20:05:58.409  INFO 30351 --- [Test worker] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2022-03-12 20:05:58.709  INFO 30351 --- [Test worker] c.example.springservice.TestController   : Started TestController in 0.697 seconds (JVM running for 1.122)
-2022-03-12 20:05:58.865  INFO 30351 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2022-03-12 20:05:58.865  INFO 30351 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2022-03-12 20:05:58.866  INFO 30351 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-2022-03-12 20:05:58.880  INFO 30351 --- [Test worker] c.e.springservice.controller.Controll    : Endpoint: /cheak
-2022-03-12 20:05:58.881  INFO 30351 --- [Test worker] c.e.springservice.controller.Controll    : Request: 123
-2022-03-12 20:05:58.881  INFO 30351 --- [Test worker] c.e.springservice.controller.Controll    : Response: len: 3 isPolinom: No
-2022-03-12 20:05:58.916  INFO 30351 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2022-03-12 20:05:58.916  INFO 30351 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2022-03-12 20:05:58.917  INFO 30351 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-2022-03-12 20:05:58.917  INFO 30351 --- [Test worker] c.e.springservice.controller.Controll    : Endpoint: /cheak
-2022-03-12 20:05:58.917  INFO 30351 --- [Test worker] c.e.springservice.controller.Controll    : Request: 
-2022-03-12 20:05:58.917  INFO 30351 --- [Test worker] c.e.springservice.controller.Controll    : BAD REQUEST
-2022-03-12 20:05:58.918  INFO 30351 --- [Test worker] c.e.springservice.controller.Controll    : Exception: BAD REQUEST
-2022-03-12 20:05:58.923  INFO 30351 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2022-03-12 20:05:58.923  INFO 30351 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2022-03-12 20:05:58.923  INFO 30351 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
-2022-03-12 20:05:58.924  INFO 30351 --- [Test worker] c.e.springservice.controller.Controll    : Endpoint: /cheak
-2022-03-12 20:05:58.924  INFO 30351 --- [Test worker] c.e.springservice.controller.Controll    : Request: 
-2022-03-12 20:05:58.924  INFO 30351 --- [Test worker] c.e.springservice.controller.Controll    : BAD REQUEST
-2022-03-12 20:05:58.925  INFO 30351 --- [Test worker] c.e.springservice.controller.Controll    : Exception: BAD REQUEST
-2022-03-12 20:05:58.929  INFO 30351 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2022-03-12 20:05:58.930  INFO 30351 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2022-03-12 20:05:58.930  INFO 30351 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
-2022-03-12 20:05:58.930  INFO 30351 --- [Test worker] c.e.springservice.controller.Controll    : Endpoint: /
-2022-03-12 20:05:58.930  INFO 30351 --- [Test worker] c.e.springservice.controller.Controll    : Internal Server Error
-2022-03-12 20:05:58.931  INFO 30351 --- [Test worker] c.e.springservice.controller.Controll    : Exception: Internal Server Error
+2022-03-14 09:58:07.844  INFO 81887 --- [restartedMain] c.e.s.SpringServiceApplication           : Starting SpringServiceApplication using Java 17.0.2 on MacBook-Air-Vana.local with PID 81887 (/Users/ripper/Desktop/bsuir/kpp/springService/build/classes/java/main started by ripper in /Users/ripper/Desktop/bsuir/kpp/springService)
+2022-03-14 09:58:07.847  INFO 81887 --- [restartedMain] c.e.s.SpringServiceApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-03-14 09:58:07.876  INFO 81887 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-14 09:58:07.876  INFO 81887 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-14 09:58:08.161  INFO 81887 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$fbda7f49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 09:58:08.211  INFO 81887 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2022-03-14 09:58:08.319  INFO 81887 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-14 09:58:08.323  INFO 81887 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-14 09:58:08.323  INFO 81887 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-14 09:58:08.346  INFO 81887 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-14 09:58:08.346  INFO 81887 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 470 ms
+2022-03-14 09:58:08.492  INFO 81887 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-14 09:58:08.505  INFO 81887 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-14 09:58:08.510  INFO 81887 --- [restartedMain] c.e.s.SpringServiceApplication           : Started SpringServiceApplication in 0.855 seconds (JVM running for 1.279)
+2022-03-14 09:58:18.696  INFO 81887 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-14 09:58:18.698  INFO 81887 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-14 09:58:18.706  INFO 81887 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2022-03-14 09:58:26.985  INFO 81887 --- [http-nio-8080-exec-3] c.e.springservice.controller.Controll    : Endpoint: /
+2022-03-14 09:58:26.986  INFO 81887 --- [http-nio-8080-exec-3] c.e.springservice.controller.Controll    : Internal Server Error
+2022-03-14 09:58:26.991  INFO 81887 --- [http-nio-8080-exec-3] c.e.springservice.controller.Controll    : Exception: Internal Server Error
+2022-03-14 09:58:27.039  WARN 81887 --- [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.springservice.exception.Exception]
+2022-03-14 09:58:43.872  INFO 81926 --- [restartedMain] c.e.s.SpringServiceApplication           : Starting SpringServiceApplication using Java 17.0.2 on MacBook-Air-Vana.local with PID 81926 (/Users/ripper/Desktop/bsuir/kpp/springService/build/classes/java/main started by ripper in /Users/ripper/Desktop/bsuir/kpp/springService)
+2022-03-14 09:58:43.873  INFO 81926 --- [restartedMain] c.e.s.SpringServiceApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-03-14 09:58:43.888  INFO 81926 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-14 09:58:43.888  INFO 81926 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-14 09:58:44.140  INFO 81926 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$de17b5d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 09:58:44.167  INFO 81926 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2022-03-14 09:58:44.264  INFO 81926 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-14 09:58:44.267  INFO 81926 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-14 09:58:44.267  INFO 81926 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-14 09:58:44.290  INFO 81926 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-14 09:58:44.290  INFO 81926 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 402 ms
+2022-03-14 09:58:44.444  INFO 81926 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-14 09:58:44.463  INFO 81926 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-14 09:58:44.471  INFO 81926 --- [restartedMain] c.e.s.SpringServiceApplication           : Started SpringServiceApplication in 0.724 seconds (JVM running for 1.037)
+2022-03-14 09:58:48.508  INFO 81926 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-14 09:58:48.509  INFO 81926 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-14 09:58:48.511  INFO 81926 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-03-14 10:00:01.698  INFO 81980 --- [restartedMain] c.e.s.SpringServiceApplication           : Starting SpringServiceApplication using Java 17.0.2 on MacBook-Air-Vana.local with PID 81980 (/Users/ripper/Desktop/bsuir/kpp/springService/build/classes/java/main started by ripper in /Users/ripper/Desktop/bsuir/kpp/springService)
+2022-03-14 10:00:01.700  INFO 81980 --- [restartedMain] c.e.s.SpringServiceApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-03-14 10:00:01.741  INFO 81980 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-14 10:00:01.741  INFO 81980 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-14 10:00:02.129  INFO 81980 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$474292ee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-14 10:00:02.160  INFO 81980 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2022-03-14 10:00:02.271  INFO 81980 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-14 10:00:02.275  INFO 81980 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-14 10:00:02.275  INFO 81980 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-14 10:00:02.294  INFO 81980 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-14 10:00:02.295  INFO 81980 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 553 ms
+2022-03-14 10:00:02.437  INFO 81980 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-14 10:00:02.455  INFO 81980 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-14 10:00:02.462  INFO 81980 --- [restartedMain] c.e.s.SpringServiceApplication           : Started SpringServiceApplication in 1.028 seconds (JVM running for 1.518)
