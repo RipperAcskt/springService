@@ -47,7 +47,7 @@ public class Controll {
 
     @ExceptionHandler(Exception.class)
     public ResponseEntity<Response> handleException(Exception e){
-        LOGGER.info("Exception: " + e.getException());
+        LOGGER.error("Exception: " + e.getException());
         Response response = new Response(e.getException());
 
         return new ResponseEntity<>(response, e.getStatus());
