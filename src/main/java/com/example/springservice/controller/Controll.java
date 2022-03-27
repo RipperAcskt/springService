@@ -1,6 +1,7 @@
 package com.example.springservice.controller;
 
 import com.example.springservice.exception.Exception;
+import com.example.springservice.logic.CountLogic;
 import com.example.springservice.polindrom.Polindrom;
 import com.example.springservice.response.Response;
 import org.slf4j.Logger;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Controll {
     private static final Logger LOGGER = LoggerFactory.getLogger(Controll.class);
+    private CountLogic counter = new CountLogic();
 
     @GetMapping("/")
     void error() throws Exception{
@@ -29,20 +31,10 @@ public class Controll {
         LOGGER.info("Request: " + word);
         if(word.equals("")){
             LOGGER.info("Empty input parametr");
-            throw new Exception("mpty input parametr", HttpStatus.BAD_REQUEST);
+            throw new Exception("Empty input parametr", HttpStatus.BAD_REQUEST);
         }
 
-        boolean check = true;
-        String str = "Yes";
-        for(int i = 0; i < word.length()/2; i++){
-            if(word.charAt(i) != word.charAt(word.length()-i-1)){
-                check = false;
-                break;
-            }
-        }
-        if(!check) str = "No";
-        LOGGER.info("Response: len: " + String.valueOf(word.length()) + " isPolinom: " + str);
-        return new Polindrom(word.length(), str);
+        return counter.calc(word);
     }
 
     @ExceptionHandler(Exception.class)

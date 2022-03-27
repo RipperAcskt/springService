@@ -4,9 +4,19 @@ public class Polindrom {
     private int len;
     private String isPolindrom;
 
+    public Polindrom() {
+        len = 0;
+        isPolindrom = "No";
+    }
+
     public Polindrom(int len, String isPolindrom){
         this.len = len;
         this.isPolindrom = isPolindrom;
+    }
+
+    public Polindrom(Polindrom p){
+        len = p.len;
+        isPolindrom = p.isPolindrom;
     }
 
     public int getLen(){
