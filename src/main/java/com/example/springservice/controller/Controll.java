@@ -17,23 +17,26 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controll {
     private static final Logger LOGGER = LoggerFactory.getLogger(Controll.class);
     private CountLogic counter = new CountLogic();
+    private Counter calls = new Counter();
 
     @GetMapping("/")
-    void error() throws Exception{
+    public void error() throws Exception{
         LOGGER.info("Endpoint: /");
         LOGGER.info("Can't process Endpoint: /");
+        calls.increment();
         throw new Exception("Can't process Endpoint: /", HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
     @GetMapping("/check")
-    Polindrom len(@RequestParam(value = "str", defaultValue = "") String word) throws Exception {
+    public Polindrom len(@RequestParam(value = "str", defaultValue = "") String word) throws Exception {
         LOGGER.info("Endpoint: /cheak");
         LOGGER.info("Request: " + word);
         if(word.equals("")){
             LOGGER.info("Empty input parametr");
             throw new Exception("Empty input parametr", HttpStatus.BAD_REQUEST);
         }
-
+        System.out.println(Thread.currentThread().getName());
+        calls.increment();
         return counter.calc(word);
     }
 

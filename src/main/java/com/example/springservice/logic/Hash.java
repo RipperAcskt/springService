@@ -12,7 +12,8 @@ public class Hash {
     }
 
     public void addToMap(String key, Polindrom result) {
-        map.put(key, result);
+        Polindrom put = new Polindrom(result.getLen(), result.getIsPolindrom());
+        map.put(key, put);
     }
 
     public Polindrom getParameters(String key) {
